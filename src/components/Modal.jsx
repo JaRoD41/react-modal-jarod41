@@ -1,5 +1,13 @@
 import React from 'react'
 
+/**
+ * Renders a modal component with the given properties.
+ *
+ * @param {boolean} isOpen - Indicates whether the modal is open or not.
+ * @param {function} onClose - The function to be called when the modal is closed.
+ * @param {ReactNode} children - The content to be rendered inside the modal.
+ * @return {ReactNode} The rendered modal component.
+ */
 const Modal = (isOpen, onClose, children) => {
   if (!isOpen) {
 		return null

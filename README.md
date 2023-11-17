@@ -1,4 +1,4 @@
-# React Modal Component
+# React Modal Component by Laurent TRINCO
 
 ## Introduction
 

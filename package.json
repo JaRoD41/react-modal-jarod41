@@ -2,6 +2,7 @@
 	"name": "react-modal-jarod41",
 	"version": "1.0.0",
 	"description": "A simple React Modal Component ",
+	"private": false,
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
@@ -10,14 +11,36 @@
 		"react",
 		"component",
 		"modal",
+		"plugin",
 		"ui"
 	],
-	"author": "Laurent Trinco",
+	"author": "Laurent Trinco alias JaRoD41",
 	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JaRoD41/react-modal-jarod41.git"
+	},
+	"homepage": "https://github.com/JaRoD41/react-modal-jarod41#readme",
 	"dependencies": {
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-scripts": "5.0.1",
 		"@babel/core": "^7.23.2"
+	},
+	"peerDependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-scripts": "5.0.1",
+		"@babel/core": "^7.23.2"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.23.2",
+		"@babel/preset-env": "^7.23.2",
+		"@babel/preset-react": "^7.22.3",
+		"babel-loader": "^9.1.2",
+		"css-loader": "^6.7.3",
+		"style-loader": "^3.3.2",
+		"webpack": "^5.75.0",
+		"webpack-cli": "^5.0.1"
 	}
 }

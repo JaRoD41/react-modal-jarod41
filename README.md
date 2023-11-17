@@ -11,24 +11,29 @@ Pour installer ce composant, utilisez la commande suivante :
 `npm install react-modal-jarod41`
 
 ```
-function App() {
-  const [isOpen, setIsOpen] = useState(false);
+import { useState } from 'react'
 
-  const handleClose = () => {
-    setIsOpen(false);
-  };
-
-  return (
-    <div className="App">
-      <button onClick={() => setIsOpen(true)}>Open Modal</button>
-      <Modal isOpen={isOpen} onClose={handleClose}>
-        <h1>Hello, World!</h1>
-      </Modal>
-    </div>
-  );
+const App = () => {
+	const [isOpen, setIsOpen] = useState(true)
+	return (
+		<div>
+			<Modal
+				isOpen={isOpen}
+				onClose={function () {
+					setIsOpen(false)
+				}}
+				children={
+					<div>
+						<h1>Titre de la modale</h1>
+						<p>Contenu de la modale</p>
+					</div>
+				}
+			/>
+		</div>
+	)
 }
 
-export default App;
+export default App
 ```
 
 ## Props

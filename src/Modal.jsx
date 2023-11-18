@@ -1,4 +1,4 @@
-import '../style/Modal.css'
+
 
 /**
  * Renders a modal component with the given properties.

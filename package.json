@@ -1,9 +1,10 @@
 {
 	"name": "react-modal-jarod41",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"description": "A simple React Modal Component ",
 	"private": false,
-	"main": "index.js",
+	"main": "./dist/Modal.umd.js",
+	"module": "./dist/Modal.umd.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "vite build"
@@ -17,6 +18,10 @@
 	],
 	"author": "Laurent Trinco alias JaRoD41",
 	"license": "ISC",
+	"files": [
+		"dist",
+		"README.md"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/JaRoD41/react-modal-jarod41.git"

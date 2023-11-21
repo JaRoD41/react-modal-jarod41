@@ -6,10 +6,14 @@ import './Modal.css'
  *
  * @param {boolean} isOpen - Indicates whether the modal is open or not.
  * @param {function} onClose - The function to be called when the modal is closed.
- * @param {ReactNode} children - The content to be rendered inside the modal.
+ * @param {string} modalContentText - The text to be displayed in the modal.
+ * @param {string} modalButtonText - The text to be displayed on the modal button.
+ * @param {string} modalBackgroundColor - The background color of the modal.
+ * @param {string} modalTextColor - The text color of the modal.
+ * @param {string} modalButtonColor - The background color of the modal button.
  * @return {ReactNode} The rendered modal component.
  */
-const Modal = ({ isOpen, onClose, children }) => {
+const Modal = ({ isOpen, onClose, modalContentText, modalButtonText, modalBackgroundColor, modalTextColor, modalButtonColor }) => {
 	if (!isOpen) {
 		return null
 	}
@@ -17,13 +21,13 @@ const Modal = ({ isOpen, onClose, children }) => {
 		<div id='modal' className='modal'>
 			<div className='modal-overlay'></div>
 			<div className='modal-container'>
-				<div className='modal-content'>
+				<div className='modal-content' style={{ backgroundColor: modalBackgroundColor, color: modalTextColor }}>
 					{/* <!--Content--> */}
-					<div className='content'>{children}</div>
+					<div className='content'>{modalContentText}</div>
 					{/* <!--Footer--> */}
 					<div className='footer'>
-						<button onClick={onClose} className='close-button'>
-							Close
+						<button onClick={onClose} className='close-button' style={{ backgroundColor: modalButtonColor }}>
+							{modalButtonText}
 						</button>
 					</div>
 				</div>

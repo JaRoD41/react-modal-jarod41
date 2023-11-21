@@ -1,3 +1,11 @@
+/* MAIN COLORS */
+:root {
+    --lighter: #fafce9;
+    --light: #f3f8cf;
+    --dark: #708618;
+    --darker: #414d1a;
+}
+
 .modal {
     position: fixed;
     width: 100%;

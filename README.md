@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Ce composant `Modal` est un composant React simple et réutilisable qui permet d'afficher une fenêtre modale dans votre application.
+Ce composant `Modal` est un composant React simple et réutilisable qui permet d'afficher une fenêtre modale personnalisée dans votre application.
 
 ## Installation
 

@@ -6,7 +6,7 @@ import './Modal.css'
  *
  * @param {boolean} isOpen - Indicates whether the modal is open or not.
  * @param {function} onClose - The function to be called when the modal is closed.
- * @param {string} modalContent - The content to be displayed in the modal.
+ * @param {ReactNode} modalContent - The content to be displayed in the modal.
  * @param {string} modalButtonText - The text to be displayed on the modal button.
  * @param {string} modalBackgroundColor - The background color of the modal.
  * @param {string} modalTextColor - The text color of the modal.

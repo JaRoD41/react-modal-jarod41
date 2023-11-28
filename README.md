@@ -51,7 +51,7 @@ Le composant `Modal` accepte les props suivantes :
 
 - `isOpen` (booléen) : Détermine si la fenêtre modale doit être affichée ou non.
 - `onClose` (fonction) : Fonction à exécuter lorsque l'utilisateur ferme la fenêtre modale.
-- `modalContentText` (string) : Le texte à afficher dans la fenêtre modale.
+- `modalContent` (ReactNode) : Le contenu à afficher dans la fenêtre modale.
 - `modalButtonText` (string) : Le texte à afficher dans le bouton de fermeture de la modale.
 - `modalBackgroundColor` (string) : La couleur de fond de la modale.
 - `modalTextColor` (string) : La couleur du texte de la modale.

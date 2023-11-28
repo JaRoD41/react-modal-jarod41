@@ -32,7 +32,7 @@ function App() {
 				onClose={function () {
 					setIsOpen(false)
 				}}
-				modalContentText={'Salut les gens !!!'}
+				modalContent={'Salut les gens !!!'}
 				modalButtonText={'Fermer'}
 				modalBackgroundColor={'pink'}
 				modalTextColor={'#000'}
